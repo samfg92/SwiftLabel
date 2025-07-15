@@ -1,0 +1,52 @@
+{
+  "version": "v1.1.6",
+  "other_config": "value",
+  "POPPLER_PATH": "C:\\Program Files\\poppler-24.08.0\\Library\\bin",
+  "IMAGE_DPI": 300,
+  "WHITELIST": "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-&()/",
+  "FONT_SIZE_PT": 20,
+
+  "OCR_CORRECTIONS": {
+    "1CB": "TCB",
+    "IPC": "TCB",
+    "TO8": "TC",
+    "TOB": "TCB",
+    "TCD": "TCB",
+    "1P12": "IP12",
+    "1P15": "IP15",
+    "GPX1": "GPXL"
+  },
+
+  "SCAN_ZONES": {
+    "4UP": [[541,2467,2260,2918],[2469,2468,4202,2942],[617,4611,2164,4970],[2239,4530,4136,4961]],
+    "3UP": [[971,4400,3710,4880],[971,3044,3710,3518],[971,1742,3710,2180]],
+    "6UP": [[443,2372,1876,2852],[1648,2396,3069,2864],[2799,2348,4184,2816],[491,4310,1936,4790],[1714,4316,3144,4790],[2811,4340,4250,4730]]
+  },
+
+  "LABEL_POINTS": {
+    "4UP": [[1420,390],[3291,390],[1420,5100],[3279,5100]],
+    "3UP": [[3900,3885],[3900,2701],[3900,1300]],
+    "6UP": [[1210,477],[2362,477],[3502,477],[1210,4800],[2362,4800],[3502,4800]]
+  },
+
+  "SKU_PARSING": {
+    "regex": "(?P<prefix>IP\\d+[A-Z]{0,2}|SG[SAJN]\\d+[A-Z]{0,2}|GP\\d+[A-Z]{0,2}|GPXL)(?:-(?P<net>[45]G))?-(?P<case>CS|TCB-CS|MS-TCB|C-C2)-(?P<suffix>[GM])",
+
+    "prefix_subs": [
+      {"match": "PR", "replace": "P"},
+      {"match": "PL", "replace": " PLUS"},
+      {"match": "IP12P", "replace_exact": "IP12"}
+    ],
+
+    "case_map": {
+      "CS": " CS",
+      "TCB-CS": " TC",
+      "C-C2": " C&C",
+      "MS-TCB": "-MS"
+    },
+
+    "suffix_map": {
+      "M": " MATTE"
+    }
+  }
+}
