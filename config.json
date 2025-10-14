@@ -1,5 +1,5 @@
 {
-  "version": "v1.3.0",
+  "version": "v1.3.1",
   "other_config": "value",
   "POPPLER_PATH": "C:\\Program Files\\poppler-24.08.0\\Library\\bin",
   "IMAGE_DPI": 300,
@@ -32,7 +32,7 @@
   },
 
   "SKU_PARSING": {
-    "regex": "(?P<prefix>IP\\d+[A-Z]{0,2}|SG[SAJN]\\d+[A-Z]{0,2}|GP\\d+[A-Z]{0,2}|GPXL)(?:-(?P<net>[45]G))?-(?P<case>CS|TCB-CS|MS-TCB|C-C2)-(?P<suffix>[GM])",
+    "regex": "(?P<prefix>IP\\d+[A-Z]{0,2}|SG[SAJN]\\d+[A-Z]{0,2}|GP\\d+[A-Z]{0,2}|GPXL)(?:-(?P<net>[45]G))?[ -]+(?P<case>CS|TC|TCB-CS|MS-TCB|C-C2)(?:[ -]+(?P<suffix>[GM]))?",
 
     "prefix_subs": [
       {"match": "PR", "replace": "P"},
@@ -43,6 +43,7 @@
     "case_map": {
       "CS": " CS",
       "TCB-CS": " TC",
+      "TC": " TC",
       "C-C2": " C&C",
       "MS-TCB": "-MS"
     },
@@ -50,6 +51,11 @@
     "suffix_map": {
       "M": " MATTE"
     }
+
+    "suffix_map": {
+      "M": " MATTE"
+    }
   }
 }
+
 
