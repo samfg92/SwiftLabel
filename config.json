@@ -9,7 +9,7 @@
     "FAMILY": "MyriadPro", 
     "FILE": "Resources/fonts/MyriadPro-Regular.otf",
     "SIZE_PT": 20,
-    "SIZE_MULTIPLIER": 1.2,
+    "SIZE_MULTIPLIER": 1.1,
     "COLOR": "#eeeeee"
   },
 
@@ -54,3 +54,4 @@
     }
   }
 }
+
