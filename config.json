@@ -1,12 +1,17 @@
 {
-  "version": "v1.3.4",
+  "version": "v1.3.7",
   "other_config": "value",
   "POPPLER_PATH": "C:\\Program Files\\poppler-24.08.0\\Library\\bin",
   "IMAGE_DPI": 300,
   "WHITELIST": "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-&()/",
-  "FONT_SIZE_PT": 20,
-  "FONT_FAMILY": "Myriad Pro", 
-  "FONT_COLOR": "#eeeeee",   
+  
+  "FONT": {
+    "FAMILY": "MyriadPro", 
+    "FILE": "Resources/fonts/MyriadPro-Regular.otf",
+    "SIZE_PT": 20,
+    "SIZE_MULTIPLIER": 1.2,
+    "COLOR": "#eeeeee"
+  },
 
   "OCR_CORRECTIONS": {
     "1CB": "TCB",
@@ -33,24 +38,19 @@
 
   "SKU_PARSING": {
     "regex": "(?P<prefix>IP\\d+[A-Z]{0,2}|SG[SAJN]\\d+[A-Z]{0,2}|GP\\d+[A-Z]{0,2}|GPXL)(?:-(?P<net>[45]G))?-(?P<case>CS|TCB-CS|MS-TCB|C-C2)-(?P<suffix>[GM])",
-
     "prefix_subs": [
-      {"match": "PR", "replace": "P"},
+      {"match": "PR", "replace": "PRO"},
       {"match": "PL", "replace": " PLUS"},
       {"match": "IP12P", "replace_exact": "IP12"}
     ],
-
     "case_map": {
       "CS": "-CS",
       "TCB-CS": "-TC",
       "C-C2": "-C&C",
       "MS-TCB": "-MS"
     },
-
     "suffix_map": {
       "M": " MATTE"
     }
   }
 }
-
-
