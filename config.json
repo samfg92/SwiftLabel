@@ -1,5 +1,5 @@
 {
-  "version": "v1.3.7",
+  "version": "v1.3.71",
   "other_config": "value",
   "POPPLER_PATH": "C:\\Program Files\\poppler-24.08.0\\Library\\bin",
   "IMAGE_DPI": 300,
@@ -7,7 +7,6 @@
   
   "FONT": {
     "FAMILY": "MyriadPro", 
-    "FILE": "Resources/fonts/MyriadPro-Regular.otf",
     "SIZE_PT": 18,
     "SIZE_MULTIPLIER": 1.1,
     "COLOR": "#eeeeee"
@@ -54,5 +53,6 @@
     }
   }
 }
+
 
 
