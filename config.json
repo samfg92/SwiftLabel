@@ -5,7 +5,7 @@
   "IMAGE_DPI": 300,
   "WHITELIST": "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-&()/",
   "FONT_SIZE_PT": 20,
-  "FONT_FAMILY": "Arial", 
+  "FONT_FAMILY": "helv", 
   "FONT_COLOR": "#eeeeee",   
 
   "OCR_CORRECTIONS": {
@@ -52,3 +52,4 @@
     }
   }
 }
+
